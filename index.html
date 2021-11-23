@@ -13,38 +13,41 @@
 </head>
 
 <body>
-  <h1>PRU-02.01 - Ejercicio 1</h1>
-  <p>Ejercicio sobre Validaciones de Formularios</p>
+  <form>
+    <h1>PRU-02.01 - Ejercicio 1</h1>
+    <p>Ejercicio sobre Validaciones de Formularios</p>
+      <div id=divError></div>
+      <p>
+        <label for=iMatricula>Matrícula</label>
+        <input type=text id=iMatricula />
+      </p>
 
-  <div id=divError></div>
-  <p>
-    <label for=iMatricula>Matrícula</label>
-    <input type=text id=iMatricula />
-  </p>
+      <p>
+        <label for=sCurso>Curso</label>
+        <select id=sCurso>
+          <option value=null> </option>
+          <option value=1DAW>Primero de DAW</option>
+          <option value=2DAW>Segundo de DAW</option>
+        </select>
+      </p>
+      <p id="modulos">
+      
+      </p>
+      <p>
+        <label for=iCalculo1>Calculos</label>
+        <input type=number min=0 max=10 step=1 id=iCalculo1 />
+        <input type=number min=0 max=10 step=1 id=iCalculo2 />
+        <input type=number min=0 max=10 step=1 id=iCalculo3 />
+        <span id=spanMedia>N/A</span>
+      </p>
 
-  <p>
-    <label for=sCurso>Curso</label>
-    <select id=sCurso>
-      <option value=null> </option>
-      <option value=1DAW>Primero de DAW</option>
-      <option value=2DAW>Segundo de DAW</option>
-    </select>
-  </p>
-
-  <p>
-    <label for=iCalculo1>Calculos</label>
-    <input type=number min=0 max=10 step=1 id=iCalculo1 />
-    <input type=number min=0 max=10 step=1 id=iCalculo2 />
-    <input type=number min=0 max=10 step=1 id=iCalculo3 />
-    <span id=spanMedia>N/A</span>
-  </p>
-
-  <p>
-    <button type=button id=btnCero>Poner a Cero</button>
-    <button>Enviar</button>
-  </p>
-
-  <script src=js/validaciones.js></script>
+      <p>
+        <button type=reset id=btnCero>Poner a Cero</button>
+        <input type="submit" value="submit" name="enviar"/> 
+      </p>
+    </form>
+  </body>
+    <script src=js/validaciones.js></script>
 </body>
 
 </html>
